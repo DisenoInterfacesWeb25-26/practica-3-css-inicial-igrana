@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercado DIW - Contacto</title>
+    <link href="assets/css/style.css" rel="stylesheet">    
+</head>
+<body>
+        <a href="index.html">
+            <img src="assets/images/logo_diw_principal.png" alt="Logo de Supermercados DIW" id="logoPortada">
+        </a>
+        <header>
+            <h1>Supermercado DIW</h1>
+            <h2>Tu supermercado orgánico de calidad</h2>
+        </header>
+    <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" max="40" pattern="[a-z][A-Z]{0-9}" placeholder="Introduzca su nombre" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Introduzca su email" required>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="18" max="99" placeholder="18-99" required>
+        <label for="telefono">Teléfono:</label>
+        <input type="telefono" id="telefono" name="telefono" placeholder="Introduzca su teléfono" required>
+        <!--Campo de consulta!!!!!-->
+        <label for="aceptar_politica">
+            <input type="checkbox" id="aceptar_politica" name="aceptar_politica">
+            Acepto la política de privacidad
+        </label>
+        <label for="consulta">
+        <textarea id="consulta" name="consulta" rows="10" cols="50" placeholder="Describa su consulta aquí">
+    </form>
+    <section>
+        Contacto:
+        <!---Esto no funciona-->
+        <a href="rel:+34635811018">Número de teléfono: 000000000></a>
+    </section>
+</body>
+</html>
