@@ -7,34 +7,73 @@
     <link href="assets/css/style.css" rel="stylesheet">    
 </head>
 <body>
-        <a href="index.html">
-            <img src="assets/images/logo_diw_principal.png" alt="Logo de Supermercados DIW" id="logoPortada">
-        </a>
-        <header>
-            <h1>Supermercado DIW</h1>
-            <h2>Tu supermercado orgánico de calidad</h2>
-        </header>
-    <form>
-        <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" max="40" pattern="[a-z][A-Z]{0-9}" placeholder="Introduzca su nombre" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Introduzca su email" required>
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad" min="18" max="99" placeholder="18-99" required>
-        <label for="telefono">Teléfono:</label>
-        <input type="telefono" id="telefono" name="telefono" placeholder="Introduzca su teléfono" required>
-        <!--Campo de consulta!!!!!-->
-        <label for="aceptar_politica">
-            <input type="checkbox" id="aceptar_politica" name="aceptar_politica">
-            Acepto la política de privacidad
-        </label>
-        <label for="consulta">
-        <textarea id="consulta" name="consulta" rows="10" cols="50" placeholder="Describa su consulta aquí">
-    </form>
+    <a href="index.html">
+        <img src="assets/images/logo_diw_principal.png" alt="Logo de Supermercados DIW" id="logoPortada">
+    </a>
+    <header>
+        <h1>Supermercado DIW</h1>
+        <h2>Tu supermercado orgánico de calidad</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#section_comida">Comida</a></li>
+            <li><a href="#section_bebida">Bebida</a></li>
+            <li><a href="#section_congelados">Congelados</a></li>
+            <li><a href="#section_ofertas">Ofertas</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div id="container-form">
+        <div id="header-form">
+            <h2>Formulario de Contacto</h2>
+            <h3>Rellena este formulario y haznos tus preguntas</h3>
+        </div>
+        <div id="form-datos">
+            <form>
+                <fieldset>
+                    <legend>Indícanos tus datos</legend>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" max="40" pattern="[a-z][A-Z]{0-9}" autofocus=”true” placeholder="Tu nombre" required>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="18" max="99" placeholder="18-99" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Indícanos cómo contactarte</legend>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="telefono" id="telefono" name="telefono" placeholder="Tu teléfono" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Política de privacidad</legend>
+                    <label for="aceptar_politica">Acepto la política de privacidad</label>
+                    <input type="checkbox" id="aceptar_politica" name="aceptar_politica">
+                </fieldset>
+                <fieldset>
+                    <legend>Indícanos tu consulta</legend>
+                    <label for="consulta">¿Qué quieres preuntarnos?</label>
+                    <textarea id="consulta" name="consulta" rows="10" cols="50" placeholder="Me gustaría saber más sobre..."></textarea>
+                </fieldset>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
     <section>
         Contacto:
-        <!---Esto no funciona-->
-        <a href="rel:+34635811018">Número de teléfono: 000000000></a>
+        <!--Mi teléfono-->
+        <a href="tel:+34635811018">Número de teléfono: +34 635811018</a>
     </section>
+    <footer>
+        Supermercados DIW
+        <a href?="">Política de privacidad y Cookies</a>
+        <a href="https://web.whatsapp.com/"><img src="assets/images/whatsapp.png" alt="Contcacto_por_Whatsapp" class="iconoRedSocial"></a>
+        <a href="https://x.com/home"><img src="assets/images/xicono-removebg-preview.png" alt="Contcacto_por_X" class="iconoRedSocial"></a>
+        <a href="https://www.instagram.com/"><img src="assets/images/instagramicone-removebg-preview.png" alt="Contcacto_por_Instagram" class="iconoRedSocial"></a>
+        <a href="https://es-es.facebook.com/"><img src="assets/images/facebookicone.png" alt="Contcacto_por_Facebook" class="iconoRedSocial"></a>
+        <a href="https://maps.app.goo.gl/6QZ67H6ED2AUbscS9"><img src="assets/images/mapa.png" alt="Mapa" id="mapa"></a>
+    </footer>
+    <script src="assets/js/script.js" type="text/javascript"></script>
 </body>
 </html>
