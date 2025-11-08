@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Supermercado DIW - Tu supermercado orgánico de calidad y cercanía a tu alcance</title>
+    <title>Supermercado DIW - El supermercado orgánico de calidad a tu alcance</title>
     <meta name="description" content="Supermercado online con comida clásica, sin gluten y vegana. Bebidas, 
     congelados y ofertas de repostería. Tu compra fácil y rápida con las mejores marcas.">
     <meta name="keywords" content="supermercado">
@@ -14,69 +14,71 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div id="cabecera>">
-        <a href="index.html">
-            <img src="assets/images/logo_diw_principal.png" alt="Logo de Supermercados DIW" id="logoPortada">
-        </a>
-        <header>
-            <h1>Supermercado DIW</h1>
-            <h2>Tu supermercado orgánico de calidad y cercanía a tu alcance</h2>
-            <ul>
-                <li><a href="">Castellano</a></li>
-                <li><a href="">Inglés</a></li>
-            </ul>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#section_comida">Comida</a></li>
-                <li><a href="#section_bebida">Bebida</a></li>
-                <li><a href="#section_congelados">Congelados</a></li>
-                <li><a href="#section_ofertas">Ofertas</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="header-logo">
+            <a href="index.html">
+                <img src="assets/images/logo_diw_principal.png" alt="Logo de Supermercados DIW" id="logo-portada">
+            </a>
+        </div>
+        <div class="header-titulo">
+            <h1>Supermercado DIW,</h1>
+            <h2><span class="brown">El supermercado orgánico de calidad a tu alcance</span></h2>
+        </div>
+        <div class="header-languages">
+            <a href="">Castellano</a>
+            |
+            <a href="">Inglés</a>
+        </div>
+    </header>
+    <nav class="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="#section_comida">Comida</a>
+        <a href="#section_bebida">Bebida</a>
+        <a href="#section_congelados">Congelados</a>
+        <a href="#section_ofertas">Ofertas</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>   
+    </nav>
     </div>
     <aside>
             <ul>
-                <li>Historial</li>
-                <li>Enlaces de interés</li>
-                <li>Comida</li>
+                <li class="aside-categoria"><a href="">Historial</a></li>
+                <li class="aside-categoria"><a href="">Enlaces de interés</a></li>
+                <li class="aside-categoria"><a href="#section_comida">Comida</a></li>
                 <li>
                     <ul>
-                        <li><a href="#article_clasica">Comida Clásica</a></li>
-                        <li><a href="#article_singluten">Comida Sin Gluten</a></li>
-                        <li><a href="#article_vegana">Comida Vegana</a></li>
+                        <li class="aside-subcategoria"><a href="#article_clasica">Comida Clásica</a></li>
+                        <li class="aside-subcategoria"><a href="#article_singluten">Comida Sin Gluten</a></li>
+                        <li class="aside-subcategoria"><a href="#article_vegana">Comida Vegana</a></li>
                     </ul>
                 </li>
-                <li>Bebida</li>
+                <li class="aside-categoria"><a href="#section_bebida">Bebida</a></li>
                 <li>
                     <ul>
-                        <li><a href="#article_refrescos">Refrescos</a></li>
-                        <li><a href="#article_agua">Agua</a></li>
-                        <li><a href="#article_alcoholicas">Bebidas alcohólicas</a></li>
+                        <li class="aside-subcategoria"><a href="#article_refrescos">Refrescos</a></li>
+                        <li class="aside-subcategoria"><a href="#article_agua">Agua</a></li>
+                        <li class="aside-subcategoria"><a href="#article_alcoholicas">Bebidas alcohólicas</a></li>
                     </ul>
                 </li>
-                <li>Congelados</li>
+                <li class="aside-categoria"><a href="#section_congelados">Congelados</a></li>
                 <li>
                     <ul>
-                        <li><a href="#article_carnescongeladas">Carnes congeladas</a></li>
-                        <li><a href="#article_verduras">Verduras</a></li>
-                        <li><a href="#article_ultracongelados">Ultracongelados</a></li>
-                        <li><a href="#article_helados">Helados</a></li>
+                        <li class="aside-subcategoria"><a href="#article_carnescongeladas">Carnes congeladas</a></li>
+                        <li class="aside-subcategoria"><a href="#article_verduras">Verduras</a></li>
+                        <li class="aside-subcategoria"><a href="#article_ultracongelados">Ultracongelados</a></li>
+                        <li class="aside-subcategoria"><a href="#article_helados">Helados</a></li>
                     </ul>
                 </li>
-                <li>Ofertas</li>
+                <li class="aside-categoria"><a href="#section_ofertas">Ofertas</a></li>
                 <li>
                     <ul>
-                        <li><a href="#article_reposteria">Ofertas de Repostería</a></li>
-                        <li><a href="#article_panaderia">Ofertas de Panadería</a></li>
+                        <li class="aside-subcategoria"><a href="#article_reposteria">Ofertas de Repostería</a></li>
+                        <li class="aside-subcategoria"><a href="#article_panaderia">Ofertas de Panadería</a></li>
                     </ul>
                 </li>
             </ul>
     </aside>
-    <div id="container-main">
+    <main class="container-main">
         <div id="container-main-header">
             <h2>Descubre nuestros productos</h2>
             <div class="breadcrumb-div">
@@ -90,32 +92,38 @@
         <div class="container-sections">
             <section id="section_ofertas">
                 <h3>Ofertas - Nuestra repostería y panadería</h3>
-                <article id="article_reposteria">
-                    <h3>Nuestras Ofertas de repostería</h3>
-                    <div class="producto"></div>
+                <article class="section-article" id="article_reposteria">
+                    <img class="section-article-img" src="assets/images/bolleria.jpeg" alt="bolleria">
+                    <div class="section-article-header">
+                        <h4 class="section-article-title">Pack Napolitanas</h4>
+                        <h4 class="section-article-brand">NOMBRE DE MARCA</h4>
+                    </div>
+                    <div class="section-article-description">
+                        Pack de deliciosas napolitanas con relleno de chocolate...
+                    </div>
                 </article>
                 <article id="article_panaderia">
-                    <h3>Nuestras Ofertas de Panadería</h3>
+                    <h4>Nuestras Ofertas de Panadería</h4>
                     <div class="producto"></div>
                 </article>
             </section>
                 <section id="section_comida">
                 <h3>Comida - Clásica, Sin Gluten y Vegana</h3>
                 <article id="article_clasica">
-                    <h3>Comida clásica</h3>
+                    <h4>Comida clásica</h4>
                     <div class="producto"></div>
                 </article>
                 <article id="article_singluten">
-                    <h3>Comida Sin Gluten</h3>
+                    <h4>Comida Sin Gluten</h4>
                     <div class="producto"></div>
                 </article>
                 <article id="article_vegana">
-                    <h3>Comida Vegana</h3>
+                    <h4>Comida Vegana</h4>
                     <div class="producto"></div>
                 </article>
             </section>
         </div>
-    </div>
+    </main>
     <footer>
         <div class="footer-header">
             <div class="footer-titulo">Supermercados DIW</div>

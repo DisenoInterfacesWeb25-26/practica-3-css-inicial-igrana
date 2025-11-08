@@ -1,34 +1,184 @@
+/*Paleta de colores*/
+:root {
+/*Colores verdes*/
+--c-verde-primario: #8cdc0e;
+--c-verde-oscuro: #68af01;
+--c-verde-claro: #aaee44;
+--c-verde-muy-claro: #dcfab5;
+--c-verde-muy-muy-claro: #effddd;
+--c-blanco: #ffffff;
+
+/*Colores de contraste*/
+--c-naranja: #ff9635;
+--c-marron: #5e3e39;
+--c-marron-claro: #805d5c;
+--c-marron-palido: #b0a79f;
+--c-marron-palido-girs: #e6e1de;
+--c-marron-palido-palido: #f4ebe0;
+--c-marron-palido-palido-palido: #fff9f2;
+}
+
+/*Importo la fuente Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 * {
-    background-color: rgb(254, 254, 254);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 1em;
 }
 
 body {
-    background-color: rgb(132, 135, 129);
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+  font-family: 'Roboto', sans-serif;
 }
 
+/*Cabecera-------------------------------------*/
 header {
-    background-color:antiquewhite;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color:var(--c-verde-muy-claro);
+  height: 100px;
+  margin: 0px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: -40px;
 }
 
+.header-languages {
+  padding: 15px;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--c-marron-palido);
+}
+
+header a:hover {
+  color: var(--c-marron);
+}
+
+#logo-portada {
+    width: 150px;
+}
+
+/*Menú nav-------------------------*/
 nav {
-    background-color: aquamarine;
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--c-blanco);
+  font-size: 1.25em;
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
 }
 
+nav a:link {
+  text-decoration: none;
+  padding-top: 3px;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+  padding-bottom: 3px;
+  color: var(--c-marron);
+}
+
+nav a:visited {
+  color: var(--c-marron-palido);
+}
+
+nav a:hover {
+  background-color: var(--c-verde-primario);
+  border-radius: 9px;
+  color: var(--c-blanco);
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+nav a:active {
+  background-color: var(--c-naranja);
+}
+
+
+/*Menú aside----------*/
 aside {
-    background-color: rgb(254, 165, 238);
+    background-color: var(--c-verde-muy-muy-claro);
+    margin: 0px;
+    padding: 25px;
+    font-size: 1em;
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+.aside-categoria a:link{
+  color: var(--c-marron);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.aside-categoria a:visited{
+  color: var(--c-marron-palido);
+}
+
+.aside-categoria a:hover{
+  color: var(--c-naranja);
+}
+
+.aside-categoria a:active{
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.aside-subcategoria a{
+  text-decoration: none;
+  color: var(--c-marron);
+  padding-left: 20px;
+}
+
+
+/*Sección principal----------------*/
+
+main {
+  background-image: url(../images/fondo_calido.png);
+  margin: 0px;
+  padding: 0px;
 }
 
 section {
-    background-color: rgb(255, 132, 32);
+    background-color: var(--c-marron-palido-palido-palido);
+    margin: 0px;
+    padding: 0px;
 }
 
 footer {
-    background-color: rgb(45, 30, 255);
+    background-color:var(--c-verde-muy-claro);
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
 }
 
-#logoPortada {
-    width: 200px;
+.form-datos {
+    background-color:var(--c-marron-palido-palido);
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
 }
+
+.container-table {
+    background-color:var(--c-marron-palido-palido);
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
 
 #mapa {
     width: 200px;
@@ -36,6 +186,7 @@ footer {
 
 .iconoRedSocial {
     width: 40px;
+    
 }
 
 /*Breadcrums*/
@@ -62,3 +213,33 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
+h1 {
+  font-size: 2.5em;
+  color: var(--c-naranja);
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: var(--c-naranja);
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+h3 {
+  font-size: 1.20em;
+  color: var(--c-verde-primario);
+}
+
+h4 {
+  font-size: 1em;
+  color: var(--c-marron-claro);
+}
+
+h5 {
+  font-size: 1.25em;
+  color: var(--c-marron-palido);
+}
+
+.brown {
+  color: var(--c-marron-claro);
+}
