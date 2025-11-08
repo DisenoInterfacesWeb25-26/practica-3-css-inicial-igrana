@@ -17,144 +17,212 @@
     <header>
         <div class="header-logo">
             <a href="index.html">
-                <img src="assets/images/logo_diw_principal.png" alt="Logo de Supermercados DIW" id="logoPortada">
+                <img src="assets/images/logo_diw_principal.png" alt="Logo de Supermercados DIW" id="logo-portada">
             </a>
         </div>
-        <div class="header-titulo">
-            <h1>Supermercado DIW - Servicios disponibles a tu alcance. Infórmate sobre nuestra variedad de servicios</h1>
+        <div class="header-title">
+            <h1>Supermercado DIW,</h1>
+            <h2><span class="subtitle">Servicios disponibles a tu alcance. Infórmate sobre nuestra variedad de servicios</span></h2>
         </div>
         <div class="header-languages">
-            <ul>
-                <li><a href="">Castellano</a></li>
-                <li><a href="">Inglés</a></li>
-            </ul>
+            <a href="">Castellano</a>
+            |
+            <a href="">Inglés</a>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#section_comida">Comida</a></li>
-            <li><a href="#section_bebida">Bebida</a></li>
-            <li><a href="#section_congelados">Congelados</a></li>
-            <li><a href="#section_ofertas">Ofertas</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <nav class="nav-menu">
+        <a href="index.html">Inicio</a>
+        <a href="#section_comida">Comida</a>
+        <a href="#section_bebida">Bebida</a>
+        <a href="#section_congelados">Congelados</a>
+        <a href="#section_ofertas">Ofertas</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="contacto.html">Contacto</a>   
     </nav>
-    <aside>
-        <ul>
-            <li>Historial</li>
-            <li>Enlaces de interés</li>
-            <li>Comida</li>
-            <li>
+    <div class="central-container">
+        <aside>
                 <ul>
-                    <li><a href="#article_clasica">Comida Clásica</a></li>
-                    <li><a href="#article_singluten">Comida Sin Gluten</a></li>
-                    <li><a href="#article_vegana">Comida Vegana</a></li>
+                    <li class="aside-categoria"><a href="">Historial</a></li>
+                    <li class="aside-categoria"><a href="">Enlaces de interés</a></li>
+                    <li class="aside-categoria"><a href="#section_comida">Comida</a></li>
+                    <li>
+                        <ul>
+                            <li class="aside-subcategoria"><a href="#article_clasica">Comida Clásica</a></li>
+                            <li class="aside-subcategoria"><a href="#article_singluten">Comida Sin Gluten</a></li>
+                            <li class="aside-subcategoria"><a href="#article_vegana">Comida Vegana</a></li>
+                        </ul>
+                    </li>
+                    <li class="aside-categoria"><a href="#section_bebida">Bebida</a></li>
+                    <li>
+                        <ul>
+                            <li class="aside-subcategoria"><a href="#article_refrescos">Refrescos</a></li>
+                            <li class="aside-subcategoria"><a href="#article_agua">Agua</a></li>
+                            <li class="aside-subcategoria"><a href="#article_alcoholicas">Bebidas alcohólicas</a></li>
+                        </ul>
+                    </li>
+                    <li class="aside-categoria"><a href="#section_congelados">Congelados</a></li>
+                    <li>
+                        <ul>
+                            <li class="aside-subcategoria"><a href="#article_carnescongeladas">Carnes congeladas</a></li>
+                            <li class="aside-subcategoria"><a href="#article_verduras">Verduras</a></li>
+                            <li class="aside-subcategoria"><a href="#article_ultracongelados">Ultracongelados</a></li>
+                            <li class="aside-subcategoria"><a href="#article_helados">Helados</a></li>
+                        </ul>
+                    </li>
+                    <li class="aside-categoria"><a href="#section_ofertas">Ofertas</a></li>
+                    <li>
+                        <ul>
+                            <li class="aside-subcategoria"><a href="#article_reposteria">Ofertas de Repostería</a></li>
+                            <li class="aside-subcategoria"><a href="#article_panaderia">Ofertas de Panadería</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li>Bebida</li>
-            <li>
-                <ul>
-                    <li><a href="#article_refrescos">Refrescos</a></li>
-                    <li><a href="#article_agua">Agua</a></li>
-                    <li><a href="#article_alcoholicas">Bebidas alcohólicas</a></li>
-                </ul>
-            </li>
-            <li>Congelados</li>
-            <li>
-                <ul>
-                    <li><a href="#article_carnescongeladas">Carnes congeladas</a></li>
-                    <li><a href="#article_verduras">Verduras</a></li>
-                    <li><a href="#article_ultracongelados">Ultracongelados</a></li>
-                    <li><a href="#article_helados">Helados</a></li>
-                </ul>
-            </li>
-            <li>Ofertas</li>
-            <li>
-                <ul>
-                    <li><a href="#article_reposteria">Ofertas de Repostería</a></li>
-                    <li><a href="#article_panaderia">Ofertas de Panadería</a></li>
-                </ul>
-            </li>
-        </ul>
-    </aside>
-    <main>
-        <div id="container-main-header">
-            <h2>Descubre nuestros productos</h2>
-            <div class="breadcrumb-div">
-                <ul class="breadcrumb-ul">
-                    <li><a href="#">Supermercados DIW</a></li>
-                    <li><a href="#">Servicios</a></li>
-                </ul>
+        </aside>
+        <main class="container-main">
+            <div id="container-main-header">
+                <h2>Nuestros servicios a tu alcance</h2>
+                <div class="breadcrumb">
+                    <a href="index.html">Supermercados DIW</a>
+                    /
+                    <a href="index.html">Servicios</a>
+                    /
+                    <a href="">TABLA: Nuestros servicios a tu alcance</a>
+                </div>
             </div>
-        </div>
-        <!--Descibir los servicios o utilizar Lorem ipsum-->
-        <div class="container-table">
-            <div id="title-table">
-                <h2>Nuestros servicios a tu alcance:</h2>
-            </div>
-            <div id="table">
+            <!--Descibir los servicios o utilizar Lorem ipsum-->
+            <div class="container-table">
                 <table>
-                    <caption>Tambla de servivio de Supermercados DIW</caption>
+                    <caption><h3>Tabla de servicios de Supermercados DIW</h3></caption>
                     <tr>
-                        <th scope="col">Encabezado 1</th>
-                        <th scope="col">Encabezado 2</th>
-                        <th scope="col">Encabezado 3</th>
-                        <th scope="col">Encabezado 4</th>
+                        <th scope="col">Lorem ipsum</th>
+                        <th scope="col">Lorem ipsum</th>
+                        <th scope="col">Lorem ipsum</th>
+                        <th scope="col">Lorem ipsum</th>
                     </tr>
                     <tr>
-                        <td>Fila 1, Celda 1</td>
-                        <td>Fila 1, Celda 2</td>
-                        <td>Fila 1, Celda 3</td>
-                        <td>Fila 1, Celda 4</td>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit felis, 
+                            magna non class mattis curabitur semper ut, habitasse cras 
+                            quisque suspendisse nibh eget lectus. 
+                        </td>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit felis...
+                        </td>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit felis... 
+                            magna non class mattis curabitur semper ut, habitasse cras 
+                            quisque suspendisse nibh eget lectus. Euismod gravida vitae 
+                            fames mauris bibendum dui, nullam dignissim felis hac arcu...
+                        </td>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit felis, 
+                            magna non class mattis curabitur semper ut, habitasse cras 
+                            quisque suspendisse nibh eget lectus. Euismod gravida vitae 
+                            fames mauris bibendum dui, nullam dignissim felis hac arcu, lectus habitant dictum vehicula aenean. Pulvinar curabitur consequat torquent nibh tempor sociis, justo vivamus eu gravida mattis, sem phasellus dapibus ante mauris.
+                        </td>
                     </tr>
                     <tr>
-                        <td>Fila 2, Celda 1</td>
-                        <td>Fila 2, Celda 2</td>
-                        <td>Fila 2, Celda 3</td>
-                        <td>Fila 2, Celda 4</td>
-                    </tr>
-                        <tr>
-                        <td>Fila 3, Celda 1</td>
-                        <td>Fila 3, Celda 2</td>
-                        <td>Fila 3, Celda 3</td>
-                        <td>Fila 3, Celda 4</td>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit felis, 
+                            magna non class mattis curabitur semper ut, habitasse cras 
+                            quisque suspendisse nibh eget lectus. Euismod gravida vitae 
+                            fames mauris bibendum dui, nullam dignissim felis hac arcu, 
+                            lectus habitant dictum vehicula aenean. 
+                            Pulvinar curabitur consequat torquent nibh tempor sociis...
+                        </td>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit felis, 
+                            magna non class mattis curabitur semper ut, habitasse cras 
+                            quisque suspendisse nibh eget lectus. Euismod gravida vitae
+                                fames mauris bibendum dui, nullam dignissim felis hac arcu, 
+                                lectus habitant dictum vehicula aenean. Pulvinar curabitur 
+                                consequat torquent nibh tempor sociis, justo vivamus eu 
+                                gravida mattis, sem phasellus dapibus ante mauris.
+                        </td>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit felis, 
+                            magna non class mattis curabitur semper ut, habitasse cras 
+                            quisque suspendisse nibh eget lectus.
+                        </td>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit felis...
+                        </td>
                     </tr>
                     <tr>
-                        <td>Fila 4, Celda 1</td>
-                        <td>Fila 4, Celda 2</td>
-                        <td>Fila 4, Celda 3</td>
-                        <td>Fila 4, Celda 4</td>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit felis, 
+                            magna non class mattis curabitur semper ut, habitasse cras 
+                            quisque suspendisse nibh eget lectus. Euismod gravida vitae 
+                            fames mauris bibendum dui, nullam dignissim felis hac arcu, 
+                            lectus habitant dictum vehicula aenean. 
+                        </td>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit felis, 
+                            magna non class mattis curabitur semper ut, habitasse cras 
+                            quisque suspendisse nibh eget lectus. Euismod gravida vitae 
+                            fames mauris bibendum dui, nullam dignissim felis hac arcu, 
+                            lectus habitant dictum vehicula aenean. Pulvinar curabitur 
+                            consequat torquent nibh tempor sociis...
+                        </td>
+                        <td>
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit felis...
+                        </td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipiscing elit felis, 
+                            magna non class mattis curabitur semper ut, habitasse cras 
+                            quisque suspendisse nibh eget lectus. Euismod gravida vitae 
+                            fames mauris bibendum dui, nullam dignissim felis hac arcu... 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lorem ipsum dolor sit amet consectetur adipiscing elit felis, 
+                            magna non class mattis curabitur semper ut, habitasse cras...
+                        </td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipiscing elit felis, 
+                            magna non class mattis curabitur semper ut, habitasse cras 
+                            quisque suspendisse nibh eget lectus. Euismod gravida vitae 
+                            fames mauris bibendum dui, nullam dignissim felis hac arcu
+                            , lectus habitant dictum vehicula aenean. Pulvinar curabitur 
+                            consequat torquent nibh tempor sociis, justo vivamus eu gravida mattis,
+                                sem phasellus dapibus ante mauris.
+                        </td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipiscing elit felis, 
+                            magna non class mattis curabitur semper ut, habitasse cras 
+                            quisque suspendisse nibh eget lectus. Euismod gravida vitae 
+                            fames mauris bibendum dui, nullam dignissim felis hac arcu, 
+                            lectus habitant dictum vehicula aenean. Pulvinar curabitur... 
+                        </td>
+                        <td>Lorem ipsum dolor sit amet consectetur adipiscing elit felis, 
+                            magna non class mattis curabitur semper ut, habitasse cras 
+                            quisque suspendisse nibh eget lectus. Euismod gravida vitae...
+                        </td>
                     </tr>
                 </table>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
     <footer>
-        <div class="footer-header">
-            <div class="footer-titulo">Supermercados DIW</div>
-            <div class="footer-telefono">
-                <!--Mi teléfono-->
-                <a href="tel:+34635811018">Llámanos al +34 635811018</a>
+        <div class="footer-top">
+            <a href="index.html">Supermercados DIW</a>
+            <!--Mi teléfono-->
+            <a href="tel:+34635811018">Llámanos al +34 635811018</a>
+            <a href="">Política de privacidad y Cookies</a>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-mapa-del-sitio">
+                <img src="assets/images/mapa-del-sitio-no-fondo.png" alt="mapa-del-sitio" id="mapa-del-sitio">
             </div>
-            <div class="footer-politica-privacidad">
-                <a href?="">Política de privacidad y Cookies</a>
+            <div class="footer-redes">
+                <a href="https://web.whatsapp.com/"><img src="assets/images/iconos/whatsapp.png" alt="Contcacto_por_Whatsapp" class="iconoRedSocial"></a>
+                <a href="https://x.com/home"><img src="assets/images/iconos/xicono.png" alt="Contcacto_por_X" class="iconoRedSocial"></a>
+                <a href="https://www.instagram.com/"><img src="assets/images/iconos/instagramicone.png" alt="Contcacto_por_Instagram" class="iconoRedSocial"></a>
+                <a href="https://es-es.facebook.com/"><img src="assets/images/iconos/facebookicone.png" alt="Contcacto_por_Facebook" class="iconoRedSocial"></a>
             </div>
-        </div>
-        <div class="footer-mapa-del-sitio">
-            <img src="assets/images/mapa-del-sitio.jpg" alt="mapa-del-sitio" id="mapa-del-sitio">
-        </div>
-        <div class="footer-redes">
-            <a href="https://web.whatsapp.com/"><img src="assets/images/whatsapp.png" alt="Contcacto_por_Whatsapp" class="iconoRedSocial"></a>
-            <a href="https://x.com/home"><img src="assets/images/xicono-removebg-preview.png" alt="Contcacto_por_X" class="iconoRedSocial"></a>
-            <a href="https://www.instagram.com/"><img src="assets/images/instagramicone-removebg-preview.png" alt="Contcacto_por_Instagram" class="iconoRedSocial"></a>
-            <a href="https://es-es.facebook.com/"><img src="assets/images/facebookicone.png" alt="Contcacto_por_Facebook" class="iconoRedSocial"></a>
-        </div>
-        <div class="footer-mapa">
-            <a href="https://maps.app.goo.gl/6QZ67H6ED2AUbscS9"><img src="assets/images/mapa.png" alt="Mapa" id="mapa"></a>
+            <div class="footer-mapa-ubicacion">
+                <a href="https://maps.app.goo.gl/6QZ67H6ED2AUbscS9"><img src="assets/images/mapa.png" alt="Mapa" id="mapa-ubicacion" class="mapa-ubicacion"></a>
+            </div>
         </div>
     </footer>
+    <a class="whatsapp-link-fixed" href="https://web.whatsapp.com/"><img src="assets/images/iconos/whatsapp.png" alt="Contcacto_por_Whatsapp" class="iconoRedSocial"></a>
     <script src="assets/js/script.js" type="text/javascript"></script>
 </body>
 </html>
