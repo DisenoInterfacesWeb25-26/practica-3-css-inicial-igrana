@@ -1,4 +1,4 @@
-/*Paleta de colores*/
+/*Paleta de colores----------------------*/
 :root {
 /*Colores verdes*/
 --c-verde-primario: #8cdc0e;
@@ -18,9 +18,45 @@
 --c-marron-palido-palido-palido: #fff9f2;
 }
 
+
+/*Letras-------------*/
+
 /*Importo la fuente Roboto*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+h1 {
+  font-size: 2.5em;
+  color: var(--c-naranja);
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: var(--c-naranja);
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+h3 {
+  font-size: 1.20em;
+  color: var(--c-verde-primario);
+}
+
+h4 {
+  font-size: 1em;
+  color: var(--c-marron-claro);
+}
+
+h5 {
+  font-size: 1.25em;
+  color: var(--c-marron-palido);
+}
+
+.brown {
+  color: var(--c-marron-claro);
+  padding-left: 10px;
+}
+
+/*General----------------------------------*/
 * {
   margin: 0px;
   padding: 0px;
@@ -99,13 +135,19 @@ nav a:hover {
   color: var(--c-blanco);
   text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 nav a:active {
   background-color: var(--c-naranja);
 }
 
+/*Contenedor central-----*/
+.contenedor-central {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
 
 /*Menú aside----------*/
 aside {
@@ -141,37 +183,163 @@ aside ul {
   text-decoration: none;
   color: var(--c-marron);
   padding-left: 20px;
+
 }
 
+.aside-subcategoria a:hover{
+  color: var(--c-naranja);
+}
 
 /*Sección principal----------------*/
-
 main {
   background-image: url(../images/fondo_calido.png);
   margin: 0px;
-  padding: 0px;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 8%;
 }
 
+.container-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-main-header {
+  padding-bottom: 10px;
+}
+
+/*Breadcrums-----------------------------*/
+.breadcrumb {
+  padding: 10px;
+  list-style: none;
+  color: var(--c-marron-palido);
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--c-marron-palido);
+}
+
+.breadcrumb a:hover {
+  color: var(--c-marron);
+  text-decoration: underline;
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/*Main secciones--------------------------*/
 section {
     background-color: var(--c-marron-palido-palido-palido);
     margin: 0px;
-    padding: 0px;
+    padding: 20px;
 }
 
+.section-header {
+  border-bottom: 2px solid var(--c-marron-palido);
+  padding: 10px;
+}
+
+.container-sections {
+  padding: 10px;
+}
+
+.seccion-contenedor-articulos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2%;
+  padding: 10px;
+}
+
+.section-article-header {
+  border-bottom: 2px solid var(--c-marron-palido);
+}
+
+.section-article-img {
+  width: 100%;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/*Footer----------------------------*/
 footer {
-    background-color:var(--c-verde-muy-claro);
-    margin: 0px;
-    padding: 0px;
-    font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color:var(--c-verde-muy-claro);
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
 }
 
+.footer-superior {
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
+  border-bottom: 2px solid var(--c-verde-oscuro);
+}
+
+.footer-superior a {
+  padding: 20px;
+  text-decoration: none;
+  color: var(--c-verde-oscuro)
+}
+
+.footer-superior a:hover {
+  color: var(--c-naranja);
+}
+
+.footer-inferior {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 0px;
+  padding: 20px;
+}
+
+/*Para que el contenedor de cada seción ocupe 1/3 y la imgaen el 100% del contenedor*/
+.footer-mapa-del-sitio {
+    width: 100%;
+}
+
+.footer-mapa-del-sitio img {
+    width: 100%;
+}
+
+.footer-redes {
+  width: 100%;
+}
+
+.footer-redes a {
+  width: 30%;
+}
+
+.footer-redes a:hover {
+  /*aquí se pondría para que cambiara la imagen a la imagen de la carpeta iconos-hover*/
+}
+
+.footer-redes a img {
+  width: 30px;
+}
+
+.footer-mapa-ubicacion {
+  width: 100%;
+}
+
+.footer-mapa-ubicacion img {
+  width: 100%;
+  padding: 10px;
+}
+
+/*Formulario-------------*/
 .form-datos {
     background-color:var(--c-marron-palido-palido);
+    font-size: 1em;
     margin: 0px;
     padding: 0px;
-    font-size: 1em;
 }
 
+
+/*Tabla-----------------------*/
 .container-table {
     background-color:var(--c-marron-palido-palido);
     margin: 0px;
@@ -180,66 +348,4 @@ footer {
 }
 
 
-#mapa {
-    width: 200px;
-}
 
-.iconoRedSocial {
-    width: 40px;
-    
-}
-
-/*Breadcrums*/
-ul.breadcrumb {
-  padding: 10px 16px;
-  list-style: none;
-  background-color: #eee;
-}
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
-}
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
-}
-ul.breadcrumb li a {
-  color: #0275d8;
-  text-decoration: none;
-}
-ul.breadcrumb li a:hover {
-  color: #01447e;
-  text-decoration: underline;
-}
-
-h1 {
-  font-size: 2.5em;
-  color: var(--c-naranja);
-  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-h2 {
-  font-size: 1.5em;
-  color: var(--c-naranja);
-  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-h3 {
-  font-size: 1.20em;
-  color: var(--c-verde-primario);
-}
-
-h4 {
-  font-size: 1em;
-  color: var(--c-marron-claro);
-}
-
-h5 {
-  font-size: 1.25em;
-  color: var(--c-marron-palido);
-}
-
-.brown {
-  color: var(--c-marron-claro);
-}
