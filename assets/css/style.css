@@ -19,6 +19,24 @@
 }
 
 
+/*Scrollbar-------------*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--c-marron-palido-palido);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--c-marron-palido);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-marron-claro);
+}
+
 /*Letras-------------*/
 
 /*Importo la fuente Roboto*/
@@ -80,7 +98,7 @@ header {
   background-color:var(--c-verde-muy-claro);
   height: 100px;
   margin: 0px;
-  padding-top: 10px, 10px, 10px, -40px;
+  padding: 10px, 10px, 10px, -40px;
 }
 
 .header-languages {
@@ -246,7 +264,11 @@ main {
 
 section {
     margin: 0px;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
+}
+
+.subsection-header {
+  padding: 10px;
 }
 
 .seccion-contenedor-articulos {
@@ -354,13 +376,75 @@ footer {
 }
 
 /*Formulario-------------*/
-.form-datos {
-  background-color:var(--c-marron-palido-palido);
-  font-size: 1em;
-  margin: 0px;
-  padding: 0px;
+.container-form {
+  background-color: var(--c-marron-palido-palido-palido);
+  padding: 20px;
+  text-align: center;
 }
 
+.form-datos {
+  width: 100%;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 10px;
+}
+
+form fieldset {
+  text-align: left;
+  padding: 20px;
+  border: 2px solid var(--c-verde-claro);
+  border-radius: 4px;
+  background-color: var(--c-verde-muy-muy-claro);
+  color: var(--c-marron);
+}
+
+form legend {
+  color: var(--c-verde-oscuro);
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+}
+
+form label {
+  padding: 5px;
+}
+
+input {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--c-verde-muy-claro);
+}
+
+
+textarea {
+  border: 1px solid var(--c-verde-muy-claro);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input[type=submit] {
+  text-decoration: none;
+  margin: 20px;
+  padding: 5px 60px 5px 60px;
+  color: var(--c-marron);
+  font-size: 1.5em;
+  background-color: var(--c-verde-muy-muy-claro);
+  border: 2px solid var(--c-verde-claro);
+}
+
+input[type=submit]:hover {
+  background-color: var(--c-verde-primario);
+  border-radius: 9px;
+  color: var(--c-blanco);
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+input[type=submit]:active {
+  background-color: var(--c-naranja);
+}
 
 /*Tabla-----------------------*/
 .container-table {
