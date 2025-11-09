@@ -71,7 +71,7 @@ h5 {
 
 .subtitle {
   color: var(--c-marron-palido);
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 /*General----------------------------------*/
@@ -98,11 +98,11 @@ header {
   background-color:var(--c-verde-muy-claro);
   height: 100px;
   margin: 0px;
-  padding: 10px, 10px, 10px, -40px;
+  padding: 10px;
 }
 
 .header-languages {
-  padding: 15px;
+  padding: 10px;
 }
 
 header ul {
@@ -172,8 +172,8 @@ nav a:active {
 aside {
   background-color: var(--c-verde-muy-muy-claro);
   width: 20%;
-  margin: 0px;
-  padding: 150px 20px 20px 20px;
+  margin: 100px 0 0 0;
+  padding: 40px 10px 20px 20px;
   font-size: 1em;
 }
 
@@ -192,11 +192,11 @@ aside ul {
 }
 
 .aside-categoria a:hover{
-  color: var(--c-naranja);
+  color: var(--c-verde-primario);
 }
 
 .aside-categoria a:active{
-  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  color: var(--c-naranja);
 }
 
 .aside-subcategoria a{
@@ -207,6 +207,10 @@ aside ul {
 }
 
 .aside-subcategoria a:hover{
+  color: var(--c-verde-primario);
+}
+
+.aside-subcategoria a:active{
   color: var(--c-naranja);
 }
 
@@ -215,7 +219,8 @@ main {
   background-image: url(../images/fondo_calido.png);
   margin: 0px;
   width: 100%;
-  padding-top: 160px;
+  margin-top: 150px;
+  padding-top: 1%;
   padding-left: 3%;
   padding-right: 3%;
   padding-bottom: 8%;
@@ -224,10 +229,6 @@ main {
 .container-main {
   display: flex;
   flex-direction: column;
-}
-
-.container-main-header {
-  padding-bottom: 10px;
 }
 
 /*Breadcrums-----------------------------*/
@@ -268,7 +269,7 @@ section {
 }
 
 .subsection-header {
-  padding: 10px;
+  padding: 20px;
 }
 
 .seccion-contenedor-articulos {
@@ -283,11 +284,14 @@ section {
 }
 
 .section-article-description {
+  padding-top: 5px;
+  font-size: 0.9em;
+  color: var(--c-marron-claro);
 }
 
 .section-article-img {
   width: 100%;
-  margin: 20px;
+  margin-right: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
@@ -365,7 +369,7 @@ footer {
   right: 30px;
   bottom: 20px;
   width: 100px;
-  background-color: var(--c-verde-muy-muy-claro);
+  background-color: var(--c-blanco);
   padding: 10px;
   border-radius: 2em;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
